@@ -1,0 +1,134 @@
+/*
+    - Modules: give a simple and generic class name::after
+                    Ex.: message, nav-menu;
+        |
+        |----> For modifiers (variants of the modules)
+        |      use double-hyphen:
+        |           Ex.: message--error, nav-menu--horizontal
+        |
+        |----> For sub-elements use double underscore:
+                    Ex.: message__media, nav-menu__text
+
+    - Breaking points:
+        |
+        |----> 600px = 37em
+               900px = 56.25em
+               1200px = 75em
+               1800px = 112,5em
+
+        using em intead px: 1200px = 75em (1200px/16px = 75em)
+        
+        16px is usually the default font size of browsers
+*/
+
+/*---------------Base styles-----------------------------*/
+
+:root {
+    box-sizing: border-box;
+    font-size: calc(1vw + 0.6em);
+}
+
+*,
+::before,
+::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0 auto;
+    text-align: center;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    background-image: url(../images/wallpaperbetter.com_1366x768.jpg);
+
+    /**/
+    height: 100%;
+    width: 100%;
+
+    position:absolute;
+
+    /*background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;*/
+
+}
+
+.logo {
+    margin-left: 2em;
+    background-color: #F5D982;
+    max-width: 8em;
+
+    float: left;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+figure {
+    margin: 0;
+    padding: 1em;
+}
+
+
+.logo-img {
+    max-width: 100%;
+}
+
+figcaption {
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 1em;
+    color: #C79C28 ;
+    text-shadow: 1px 1px 1px black;
+}
+
+.content {
+    background-color: #F5D982;
+    color: black;
+    font-weight: normal;
+    padding: 1em;
+    width: 15em;
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    float: right;
+    margin-right: 4em;
+}
+
+hr {
+    margin: 0;
+    border-top: 1px solid black;
+    padding: 0;
+}
+
+.hotelName {
+    margin: 0.5em;
+    font-family: 'Cinzel Decorative', cursive;
+}
+
+.roomRate {
+    margin-top: 0.5em;
+    margin-bottom: 0;
+    text-decoration: line-through;
+    text-align: left;
+}
+
+.specialRate {
+    font-size: 4em;
+    padding: 0;
+    color: #2E4CAE;
+    font-family: 'Raleway', sans-serif;
+    margin: 0.1em;
+    text-shadow: 1px 2px 0px black;
+}
+
+.info {
+    font-size: 0.8em;
+}
+
+.offerEnds {
+    text-transform: uppercase;
+    color: #2E4CAE;
+    font-weight: bold;
+}

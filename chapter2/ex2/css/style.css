@@ -1,0 +1,160 @@
+/*
+    - Modules: give a simple and generic class name::after
+                    Ex.: message, nav-menu;
+        |
+        |----> For modifiers (variants of the modules)
+        |      use double-hyphen:
+        |           Ex.: message--error, nav-menu--horizontal
+        |
+        |----> For sub-elements use double underscore:
+                    Ex.: message__media, nav-menu__text
+
+    - Breaking points:
+        |
+        |----> 600px = 37em
+               900px = 56.25em
+               1200px = 75em
+               1800px = 112,5em
+
+        using em intead px: 1200px = 75em (1200px/16px = 75em)
+        
+        16px is usually the default font size of browsers
+*/
+
+/*---------------Base styles-----------------------------*/
+
+:root {
+    box-sizing: border-box;
+    font-size: calc(1vw + 0.6em);
+}
+
+*,
+::before,
+::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0 auto;
+    text-align: center;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    background-image: url(../images/evie-s-w1JE5duY62M-unsplash.jpg);
+
+    /**/
+    height: 100%;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+h1 {
+    font-family: 'Pattaya', sans-serif;
+    font-size: 4em;
+    padding: 0;
+    margin: 0;
+
+   /* background-image: linear-gradient(45deg, #06619B, #63DD97);
+    background-image: linear-gradient(45deg, #CC4056,  #DA9346);*/
+    background-image: linear-gradient(45deg, #CC4056,  #D5A9C2);
+
+    background-size: 100%;
+    background-repeat: repeat;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.title {
+    font-size: 1.6em;
+    font-weight: bolder;
+    font-style: oblique;
+}
+
+.note {
+    font-size: 1.3em;
+}
+
+.name {
+    text-decoration: underline;
+}
+
+
+.stock {
+    font-size: 1.3em;
+}
+
+.true, .false {
+    background-image: url("../images/tick-cross.png");
+    height: 25px;
+    width: 25px;
+    display: inline-block;
+}
+
+.false {
+    background-position: 0 -25px;
+}
+
+
+.message {
+    font-weight: bolder;
+    display: block;
+    align-content: center;
+}
+
+.hotel {
+    background-color: #a3c0ce;
+    color: black;
+    font-weight: normal;
+    padding: 1em;
+    width: 15em;
+    margin: 1em auto;
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.hotel h4 {
+    margin: 0.05em;
+}
+
+.hotel-2 :first-child {
+    font-weight: normal;
+}
+
+.hotelName {
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: #CC4056;
+    font-style: italicd;
+}
+
+hr {
+    margin: 0;
+    border-top: 1px solid black;
+}
+
+.rooms {
+    font-size: 4em;
+    margin: 0;
+    padding: 0;
+    color: #CC4056;
+    font-family: 'Raleway', sans-serif;
+}
+
+.availability :last-child {
+    margin-top: -0.2em;
+}
+
+
+.box-2 p {
+    font-size: 0.9em;
+}
+
+.footer {
+    background-color: khaki;
+}

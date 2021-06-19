@@ -1,0 +1,94 @@
+/*;
+    - Modules: give a simple and generic class name: 
+        |           Ex: message, nav-menu;
+        |
+        |----> For modifiers (variants of the modules) 
+        |      use double-hyphen: 
+        |           Ex: message--error, nav-menu--horizontal;
+        |                                                                     
+        |----> For sub-elements use double underscore: 
+                    Ex: message__media, nav-menu__text
+
+    - Braking points:
+        |
+        |---->  600px = 37em
+                900px = 56.25em
+                1200px = 75em;
+                1800px = 112,5em
+
+        using em instead px: 1200px = 75em (1200px/16px = 75)
+    
+         16px is usually the default font size of browsers
+
+*/
+
+/* ---------------Base styles---------------*/
+
+:root {
+    box-sizing: border-box;
+    font-size: calc(1vw + 0.6em); /* base font size scales slightly with viewport*/
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.container {
+    background-image: url(../images/evie-s-w1JE5duY62M-unsplash.jpg);
+
+    /* Full height*/
+    height: 47em;
+
+    /* Center and scale the image nicely*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media(min-width:37em){
+    .container {
+        /* Full height*/
+        height: 47em;
+    }
+    
+}
+
+
+@media(min-width:56.25em){
+    .container {
+        max-width: 47em;
+        margin: 0 auto;
+
+        /* Full height*/
+        height: 47em;
+    }   
+}
+
+h1 {
+    font-family: 'Pattaya', sans-serif;
+    font-size: 5em;
+    /* Create the background gradient*/
+    /*background-image: linear-gradient(45deg, #f3ec78, #af4261);*/
+    background-image: linear-gradient(45deg, #06619B, #63DD97);
+    
+    /* Set background size and repeat properties.*/
+    background-size: 100%;
+    background-repeat: repeat;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+    padding: 0;
+}
+
+#cost {
+    font-size: 2.5em;
+    font-family: Arial, Helvetica, sans-serif;
+}
