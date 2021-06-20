@@ -51,8 +51,23 @@ var startItem = document.getElementById('seventh-list_two');
 var prevItem = startItem.previousSibling;
 var nextItem = startItem.nextSibling;
 
+//window.alert(nextItem.className);
+
 // Change the values of the siblings' class attributes
 prevItem.className = 'complete';
-prevItem.className = 'cool';
+nextItem.className = 'cool';
+//window.alert(prevItem.className);
+//-----------------------------------------------------
+// Select the start point of the three
+// var startItem8 = document.getElementsByTagName('ul');
+
+//window.alert(startItem8);
+
+//var firstItem8 = startItem8.firstChild;
+
+//window.alert(typeof firstItem8);
+
+//firstItem8.setAttribute('class', 'complete');
+
 
 
