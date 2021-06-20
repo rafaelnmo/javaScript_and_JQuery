@@ -77,9 +77,37 @@ li {
     text-shadow: 1px 1px 1px rgb(29, 29, 29);
 }
 
-.hot, .second_hot, .third_hot, .fourth_hot, .fifth_hot, .seventh_hot, .eighth_hot{
+.hot, .second_hot, .third_hot, .fourth_hot, .fifth_hot, .seventh_hot, .eighth_hot, .nineth_hot{
     background-color: #e04d40;
     border: 1px solid #d1483b;
+}
+
+.zero {
+    background-color: white;
+    border: 1px solid #8d928d;
+
+    color: black;
+    text-shadow: 1px 1px 1px rgb(131, 131, 131);
+    border-radius: 1em 1em 0 0;
+
+    text-transform: uppercase;
+
+}
+
+.message {
+    background-color: white;
+    border: 1px solid #8d928d;
+
+    color: black;
+    text-shadow: 1px 1px 1px rgb(131, 131, 131);
+    border-radius: 1em;
+
+    margin: 0.5em;
+
+}
+
+.hidden {
+    display: none;
 }
 
 .complete {
