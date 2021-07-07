@@ -119,3 +119,7 @@ li {
     background-color: #5dd7ac ;
     border: 1px solid #4eb994;
 }
+
+a {
+    color: inherit;
+}

@@ -106,3 +106,47 @@ var msg = '<p>textContent: ' + showTextContent + '</p>';
     elMessage.innerHTML = msg;
 
     elElementTen.textContent = 'sourdough bread';
+
+//-----------------------------------------------------//
+//   Access & update text and markup with innerHTML   //
+
+var itemEleven;
+itemEleven = '<em>Fresh</em> figs';         // instantiate the new variable value
+
+document.getElementById('eleventh-list_two').innerHTML = itemEleven;            // update directly the content of the element two
+
+
+//-----------------------------------------------------//
+//         Update text and markup with innerHTML      //
+
+var firstEleventhItem = document.getElementById('eleventh-list_one');           // Store the first list item in a variable
+
+var itemContent = firstEleventhItem.innerHTML;      // gets the contenti of the first list item
+
+firstEleventhItem.innerHTML = '<a href=\"http://example.org\"\>' + itemContent + '</a>';
+
+
+//-----------------------------------------------------//
+//           Adding element to the DOM tree           //
+// Create a new element and store it in a variable
+var newEl = document.createElement('li');
+
+// Create a text node and store it in a variable
+var newText = document.createTextNode('quinoa');
+
+// Attach the new text node to the new element
+newEl.appendChild(newText);
+
+// Find the position where the new element shoul be added
+var position = document.getElementsByTagName('ul')[10];
+
+position.appendChild(newEl);
+
+//-----------------------------------------------------//
+var twelveList = document.getElementsByTagName('ul')[11];
+
+var removeEl = twelveList.getElementsByTagName('li')[3];
+
+var containerEl = removeEl.parentNode;
+
+containerEl.removeChild(removeEl);

@@ -1,0 +1,105 @@
+:root {
+    box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+    box-sizing: inherit;
+}
+
+body {
+    color: white;
+    background-color: black;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    margin: 0;
+}
+
+body * + * {
+    margin-top: 1.5em;
+}
+
+.container {
+    max-width: 320px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.logo {
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+.logo_image {
+    width: 8em;
+    margin: 0;
+}
+
+.title {
+    margin: 0;
+    text-transform: uppercase;
+}
+
+h1 {
+    margin: 1.5em auto;
+    margin-bottom: 0.7em;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    letter-spacing: 5px;
+}
+
+.listNumber {
+    color: black;
+    background-color: white;
+    border-radius: 50%;
+    font-style:normal;
+    padding: 0.1em;
+    padding-left: 0.32em;
+    padding-bottom: 0.05em;
+    border-radius: 2em 2em 2em 2em;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: lowercase;
+    font-size: 0.8em;
+}
+
+ul {
+    margin: 0;
+   padding: 0;
+   margin-bottom: 1em;
+}
+
+li {
+    
+    list-style: none;
+    margin: 0;
+    padding: 0.5em;
+    background-color: #f48032;
+    border: 1px solid #d46e29;
+    font-size: 1.3em;
+    text-shadow: 1px 1px 1px rgb(29, 29, 29);
+}
+
+.hot {
+    background-color: #e04d40;
+    border: 1px solid #d1483b;
+}
+
+
+.cool {
+    background-color: #5dd7ac ;
+    border: 1px solid #4eb994;
+}
+
+.complete {
+    background-color: #8d928d;
+    border: 1px solid #777a77;
+}
+.empty {
+    background-color: white;
+    border: 1px solid lightgray;
+    color: black;
+    text-shadow: 1px 1px 1px rgb(131, 131, 131);
+    border-radius: 1em 1em 1em 1em;
+}
